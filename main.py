@@ -22,14 +22,14 @@ def main(calc_data: str):
 
 def calculation(left_operand: int, right_operand: int, operator: str):
     if operator == '+':
-        return left_operand + right_operand
+        return f'{left_operand + right_operand}'
     elif operator == '-':
-        return left_operand - right_operand
+        return f'{left_operand - right_operand}'
     elif operator == '*':
-        return left_operand * right_operand
+        return f'{left_operand * right_operand}'
     elif operator == '/':
         try:
-            return left_operand // right_operand
+            return f'{left_operand // right_operand}'
         except:
             return Exception('throws Exception 5')
 
